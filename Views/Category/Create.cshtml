@@ -1,0 +1,14 @@
+﻿@model CategoryModel
+
+<form asp-controller="Category" asp-action="Create" method="post">
+  <div class="w-25 p-6">
+    <label asp-for="Name" class="form-label">CLOTHING CATEGORIES:</label>
+    <input asp-for="Name" type="text" class="form-control">
+    @Html.ValidationMessageFor(m => m.Name)
+  </div>
+  </form>
+  <button type="button" class="btn btn-primary">ADD NEW CATEGORY</button>
+  <br />
+<form asp-controller="Category" asp-action="Index" method="post">
+
+</form>
